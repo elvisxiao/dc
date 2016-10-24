@@ -1,0 +1,17 @@
+.zFixRight .fixRightHd {
+	top: 50px !important;
+}
+.zFixRight .fixRightBd {
+	top: 90px !important;
+}
+
+.boxTitle {
+	padding: 0 10px;
+	background-color: #f0f0f0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.tableNoBorder tr, .tableNoBorder td {
+	border: none !important;
+}
