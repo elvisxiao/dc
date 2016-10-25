@@ -1,0 +1,14 @@
+[
+	{
+		"name": "CPU: 40 Cores", 
+		"percent": 20
+	},
+	{
+		"name": "Mem: 256GB", 
+		"percent": 50
+	},
+	{
+		"name": "Disk: 2TB", 
+		"percent": 45
+	}
+]
