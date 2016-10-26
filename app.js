@@ -17,21 +17,25 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/', require('./routes/'));
+// app.use('/', require('./routes/'));
 // catch 404 and forward to error handler
 app.use(function(req, res) {
-    res.render('404');
+    // res.render('404');
+    console.log('get 404 request:' + req.url);
 });
 
 // production error handler
 app.use(function(err, req, res, next) {
     // res.status(err.status || 500);
     console.error('页面错误：', err);
-    res.render('error');
+    // res.render('error');
+    
+    console.log('get error:', err);
 });
 
 app.listen(3333, function() {
     console.log('server is listen on port 3333');
 });
+
 
 
