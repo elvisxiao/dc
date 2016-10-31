@@ -762,8 +762,9 @@
         form.find('input[name="params"]:checked').each(function() {
           model.params.push(this.value);
         })
+      });
 
-        return model;
+      return model;
     }
 
     self.deploy = function(e) {
