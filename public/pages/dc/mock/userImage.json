@@ -1,0 +1,134 @@
+[
+	{
+		"id": 1,
+		"name": "私有1", 
+		"address": "地址1",
+		"user": "Test",
+		"password": "123456",
+		"imgs": [
+			{
+				"id": 1,
+				"title": "image1",
+				"versions": [
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 2,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			},
+			{
+				"id": 1,
+				"title": "image2",
+				"versions": [
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			},
+			{
+				"id": 1,
+				"title": "image3",
+				"versions": [
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"id": 1,
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "私有2", 
+		"address": "地址1",
+		"user": "Test",
+		"password": "123456",
+		"imgs": [
+			{
+				"title": "image1",
+				"versions": [
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			},
+			{
+				"title": "image2",
+				"versions": [
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			},
+			{
+				"title": "image3",
+				"versions": [
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					},
+					{
+						"title": "Version 1",
+						"updateAt": "2016-12-12 "
+					}
+				]
+			}
+		]
+	}
+]

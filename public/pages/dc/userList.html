@@ -333,6 +333,7 @@
             <li><a href="/pages/dc/userList.html"><i class="fa fa-circle-o"></i> 用户列表</a></li>
             <li><a href="/pages/dc/userDashboard.html"><i class="fa fa-circle-o"></i> 用户Dashboard</a></li>
             <li><a href="/pages/dc/toolsList.html"><i class="fa fa-circle-o"></i> 工具列表</a></li>
+            <li><a href="/pages/dc/userContent.html"><i class="fa fa-circle-o"></i> 用户内容</a></li>
           </ul>
         </li>
         
@@ -632,7 +633,7 @@
 
     self.renderTable = function() {
       self.table = new oc.Table();
-
+      self.table.pageSize = 20;
       self.table.headMapping = {
         name:        { text: "用户名" },
         description: { text: "描述" },

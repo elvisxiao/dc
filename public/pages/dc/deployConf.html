@@ -1,0 +1,91 @@
+<form class="box-body no-padding">
+  <table class="table table-condensed tableNoBorder">
+    <tbody>
+      <tr>
+        <td class="w100">名称： </td>
+        <td><input type="text" name="name" class="form-control input-sm w300"></td>
+    	</tr>
+    	<tr>
+        <td>镜像信息:</td>
+        <td><span data-name="imageName"></span><span class="ml30" data-name="version"></span></td>
+      </tr>
+    	<tr>
+        <td>部署实例数量:</td>
+        <td>
+        	<div class="input-group" style="width: 150px">
+						<input type="number" class="form-control input-sm" name="quantity" value="1" step="1" min="1" max="20">
+						<span class="input-group-addon">个</span>
+					</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+	
+  <div class="mt20">
+  	<dl class="repoConfItem" data-name="fileDir">
+  		<dt class="boxTitle">文件目录配置
+  			<i class="icon icon-plus2 iconAdd"></i>
+  		</dt>
+  		<dd>
+  			<input type="text" name="" class="form-control input-sm">
+  			<span class="pl50 pr50 icon icon-arrow-right3"></span>
+  			<input type="text" name="" class="form-control input-sm">
+  			<i class="icon icon-minus2 iconDelete"></i>
+  		</dd>
+  	</dl>
+  	<dl class="repoConfItem" data-name="port">
+  		<dt class="boxTitle">端口配置
+  			<i class="icon icon-plus2 iconAdd"></i>
+  		</dt>
+  		<dd>
+  			<input type="text" name="" class="form-control input-sm">
+  			<span class="pl50 pr50 icon icon-arrow-right3"></span>
+  			<input type="text" name="" class="form-control input-sm">
+  			<i class="icon icon-minus2 iconDelete"></i>
+  		</dd>
+  	</dl>
+  	<dl class="repoConfItem" data-name="env">
+  		<dt class="boxTitle">环境变量
+  			<i class="icon icon-plus2 iconAdd"></i>
+  		</dt>
+  		<dd>
+  			<input type="text" name="" class="form-control input-sm">
+  			<span class="pl50 pr50 icon icon-arrow-right3"></span>
+  			<input type="text" name="" class="form-control input-sm">
+  			<i class="icon icon-minus2 iconDelete"></i>
+  		</dd>
+  	</dl>
+  	<div id="divParmas">
+  		<p class="boxTitle">通用参数</p>
+  		<div class="p10">
+	  		<label><input type="checkbox" name="params" value="自动启动">自动启动</label>
+	  		<label><input type="checkbox" name="params" value="自动启动1">自动启动1</label>
+	  		<label><input type="checkbox" name="params" value="自动启动2">自动启动2</label>
+	  		<label><input type="checkbox" name="params" value="自动启动3">自动启动3</label>
+	  		<label><input type="checkbox" name="params" value="自动启动4">自动启动4</label>
+	  		<label><input type="checkbox" name="params" value="自动启动5">自动启动5</label>
+	  		<label><input type="checkbox" name="params" value="自动启动6">自动启动6</label>
+	  	</div>
+  	</div>
+  	<div class="mt20">
+  		<button type="submit" class="btn btn-primary w150">开始部署</button>
+  		<button type="button" id="btnSaveRepo" class="btn btn-default ml20 w150">保 存</button>
+  	</div>
+  </div>
+</form>
+<script type="text/javascript">
+	$('.repoConfItem').on('click', '.iconAdd', function() {
+		var dl = $(this).parents('dl');
+		var firstDd = dl.find('>dd:eq(0)');
+		var newDd = firstDd.clone();
+		newDd.find('input').val('');
+		newDd.appendTo(dl);
+	})
+	.on('click', '.iconDelete', function() {
+		var dl = $(this).parents('dl');
+		if(dl.find('>dd').length === 1) {
+			return;
+		}
+		$(this).parents('dd').remove();
+	});
+</script>

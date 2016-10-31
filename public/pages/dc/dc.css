@@ -65,3 +65,80 @@
 .panel.panel-default .panel-heading {
 	padding: 0;
 }
+.panelHeader {
+	padding: 8px 15px;
+	font-size: 14px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: all .3s;
+}
+.panelHeader button {
+	margin-left: 30px;
+}
+.panelHeader i {
+	float: left;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.panelBody {
+	/*border: 1px solid #eee;*/
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	padding: 0px 0 0 15px;
+}
+.panelBody li {
+	margin-top: 10px;
+}
+.panelHeader.active, .panelHeader:hover {
+	/*background-color: #f0f0f0;	*/
+	border-bottom: 1px solid #eee;
+	color: #222;
+}
+.panelHeader.active ~ .panelBody {
+	visibility: visible;
+	height: auto;
+	padding: 10px 15px;
+}
+
+.panelHeader .btnDeleteImage, 
+.panelBody .btnDeleteVersion, 
+.panelBody .btnDeploy {
+	float: right;
+}
+
+.panelHeader .btnDeleteImage {
+	width: 82px;
+}
+
+.repoConfItem dd {
+	margin: 10px 0;
+}
+.repoConfItem dd, .repoConfItem dt {
+	padding: 0 10px;
+}
+.repoConfItem dd input {
+	display: inline-block;
+	width: 300px;
+}
+.repoConfItem i {
+	float: right;
+	font-size: 20px;
+	color: #00c0ef;
+	cursor: pointer;
+	margin-top:  10px;
+}
+.repoConfItem dd i {
+	margin-top: 5px;
+	color: #f39c12;
+}
+#divParmas label {
+	display: inline-block;
+	width: 185px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#divParmas label input{
+	margin-right: 5px;
+}
