@@ -854,7 +854,7 @@
         var id = tr.attr('data-id');
         self.drawUserChart(id);
       })
-      .on('click', 'tr[data-id] .tdTools', function() {
+      .on('click', 'tr[data-id] .tdTools', function(e) {
         e.preventDefault();
         var tr = $(this).parents('tr');
         var id = tr.attr('data-id');
